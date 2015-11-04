@@ -1,0 +1,181 @@
+Working TITLE
+Making Better Car Buying Decisions via Signal Aggregation
+or
+feed the behaviors you wan to grow (can we car-ify that name?)
+[fuel the cars you want to drive]
+
+AUDIENCE
+Anyone who wants to operate or rely upon a reputation system
+Creators building a system where a consumer is provided information sufficient to expose bad behaviour
+Consumers extending risk
+Specification writers
+
+
+USE CASE: Buying Classic Cars Online
+Classic cars are an expensive, emotional purchase
+Carl is in the market for a BMW 2002 and has found a 1973 in Florida. The listing claims the vehicle has been completely restored and is ready for years of worry free driving - just what Carl wants
+These are unique items that are often physically distant from the potential buyer, incenting sight-unseen transactions
+Alternative options such as live auctions incur steep transaction costs
+Carl plans to spend $10-15K on the BMW. Traveling to an auction and paying all the fees simply isn’t worth the time and cost for this purchase
+There is no way to perfectly describe a vehicle online
+There are a multitude of sellers/owners and there’s no easy way to assess the trustworthiness of the selling entity
+Carl found the vehicle on BringATrailer.com. There is no rating system that allows him to assess the seller’s reputation on the site.
+certain attributes of the vehicle can be objectively assessed. ex: mileage can be assessed via CarFax
+Carl pulled the CarFax for the vehicle and it verifies the mileage of the vehicle. He also sees that the seller recently purchased the vehicle and it has had 10 prior owners
+other attributes, such as the vehicle’s condition can’t be easily assessed remotely
+condition is subjective
+finding a mechanic to perform an assessment requires placing trust in another third party
+
+
+Sarah is the owner and seller of the vehicle. Sarah bought the car because she thought it’d be fun, but quickly became bored with it. She knows the vehicle looks good but isn’t confident in the mechanical condition since it’s been making some engine noises.
+Sarah doesn’t have the time to take the vehicle to a mechanic for an inspection, and is a little afraid of what she’ll be told if she does. Carl has identified a local mechanic Irma, but he has no way to know if Irma will perform a thorough inspection so he’s hesitant to pay the $300 cost
+Carl contacts Sara and asks many questions about the condition of the vehicle. The seller answers the questions but doesn’t volunteer any extra information that might be helpful to Carl.
+[two specific questions?  Does the motor need any work as far as you can tell?  Is the motor making any noise?]
+Carl is stuck. The car looks good, but seeing is believing. Should he buy the car and pay the $1000 shipping fee? He’s unlikely to find a nicer vehicle locally. But he could end up with a vehicle that doesn’t run.
+
+
+WHERE IS THE PAIN / WHAT IS THE BEHAVIOR WE WANT?
+(IN THIS USE CASE)?
+Want more signals about the condition of the vehicle
+Many of the signals we want are subjective (e.g. what’s the condition of the paint)
+Want a way to assess these signals
+Should I trust the assessor?
+
+How can the user interpret the signal
+why and how can it be trusted
+What behavior does Carl want?
+Ultimately Carl wants to buy a car that meets his needs and expectations. To do this, Carl, wants information that helps him make this determination and that doesn’t mislead him
+What behavior does Sara want?
+Sara wants to sell the car for as much as possible, but she also wants to exhibit what she feels is ethical behavior. She may also be interested in using a rating from this transaction as a signal for future transactions
+What behavior does Michael want?
+Michael is very interested in paying a fair price for the vehicle given it’s condition.
+What behavior does Irma want?
+Irma is primarily interested in building his reputation
+[WHICH OF THESE BEHAVIOR PREFERENCES NEED TO BE FLUSHED OUT?  Which can be alluded to? Which can be ignored?]
+
+HOW CAN WE ADDRESS THAT PAIN / GET THE BEHAVIOR WE WANT?
+Resilience
+
+
+Carl has no easy way to fix up a car that arrives on his doorstep with mechanical problems.  As a result, Carl wants to avoid buying a car that needs mechanical work.
+As long as the price is low enough, Michael doesn’t care whether the engine is in need of some work.  He has several other “parts cars” lying around his property that he can harvest parts from to fix mechanical issues for a 1973 BMW.
+
+ 
+Some content for the use case
+
+Michael, the mechanic doesn’t want a mint condition car.  Not because he wouldn’t like it, but because it is too expensive.  Michael buys cars that need some fixing up.  He then fixes their mechanical issues and sells them for a profit.
+
+
+Irma, the inspector, 
+
+
+Let’s make the connection:  Why is our problem related to the web of trust problem.  Currently people are only thinking of web of trust as this idea of how to verify that a specific key belongs to a specific person.  This same pattern can be applied to other types of information and signals.
+
+Is there (and how many) a (trusted) path between me and the information.
+
+How can we improve the ability for individuals to understand and navigate their way through both the digital and real-world contexts?
+
+Bounding risk? Comfortable enough (based on the path to this information) to rely upon it -- and thus expose myself to this particular vulnerability.
+
+
+SOLUTION
+
+a network of inspectors
+have an online reputation
+they go around and look at a car for someone else
+assess the state that it is in
+the concerns that  they have
+after each transaction, the person that relied upon them is asked to assess their work at three times:
+immediately upon receipt of the car (or after not receiving the car if they opted not to buy)
+3 months later
+1 year later
+these assessments by past clients can be relied upon by Carl to help him decide whether or not to hire Irma as an inspector.
+Irma has established a strong track record.  Past clients have described her as a “mechanical sherlock holmes,” and “incredibly thorough.”
+As a result, she doesn’t come cheap.  An inspection by Irma costs $300 for a full report.
+Irma has done hundreds of inspections.  But three of them were for old friends of Carl. After looking at those three transactions, Carl decided that Irma is the inspector for him.
+Carl hires Irma, the inspector to look at the vehicle.
+Irma meets with Sara, checks the VIN and other identifying marks.
+Irma then inspects the vehicle
+Irma sends Carl and Sara a report. Each is given permission to pass it along to others as well. 
+The report says: 
+For the 1973 BMW 2002 with VIN 1HGBH41JXMN109186:
+Body is in like new shape
+Interior is in nearly new shape
+Engine makes noise
+The timing chain needs to be changed
+Carl receives the report, and decides that he is unwilling to buy the car.
+Had there been a reputation system for sellers, Carl could comment on Sara -- she said the engine was fine as far as she knew.  I spent $300 on an inspection.  Engine made noise.  
+Beyond Carl:
+After Carl fell through as a buyer, a second potential buyer named Michael reached out.  Michael is a savvy mechanic.  Sara sends him the report.
+Michael looks up Irma and confirms that the report is authentic and from her
+He also looks up Irma’s history and sees that she is trustworthy, though a bit more pricey than he would have been willing to pay for if he had to pay for the report.
+Had he paid for a report, he wouldn’t have paid for a full assessment from a certified mechanic like Irma.  Would have been satisfied with a video (with audio) of the car being driven and the motor running -- from someone that had established a history of uploading videos like that with high marks for:
+accuracy
+well lit
+footage is not too shaky  
+With that footage, Michael can generally perform a “remote assessment” that will give him enough detail for a “buy” / “don’t buy” decision.
+Michael sees the report and thinks to himself -- I could do that timing chain repair over a long weekend and make about $3000 by turning around and reselling the car.
+Michael decides that this is exactly the kind of car that he wants and buys the car. 
+
+
+
+TAKE-AWAY FOR THE AUDIENCE
+If we are to summarize the “big lesson” in one sentence -- what is it?
+Subjective decision making can be improved with signals and assessments facilitated by a WoT.
+
+Each person can make better decisions that reflect their own preferences if they have access to more information provided by a WoT.
+
+… if they have access to information about the attributes that 
+What is we move the take away into the first person?
+
+
+Every day, I am faced with tough choices.  I don’t always have the personal ability to make an informed choice.  I sometimes need to rely upon others to help me understand my options and make a decision.  Web systems that enable me to find the attributes that I care about, from sources I find reliable, can help me make better decisions.
+
+If each of us is able to do that, for everything.  It isn’t that “bad behavior” disappears entirely from our community.  Whether or not something is “bad” is a subjective judgment.  Instead, behaviors that are perceived as “useful” by each individual will attract support and resources.  Behaviors that are not seen as useful aren’t necessarily punished, but they aren’t able to attract resources either.
+
+====
+A framework describing trust (Generalizing from our specific example to a broader pattern)
+Goals
+encourage good behaviour
+disincentivize bad behaviour
+define acceptable and expected behaviour
+minimize harm
+proactive: add acceptable friction to participation
+reactive: increase cost of unexpected or unacceptable behaviour
+robust
+objectively ensure common operations simply can’t compromise system
+resilience
+introduce feedback process
+Assessing and responding to 
+Objectivity
+[preexisting?] ID
+Validity
+Determine whether information is understood
+filters noise
+Assessment / Attributes
+Determine impact – How does the world change?
+Determine context
+Activity: Finalize change and route to subjective interpreter
+Subjectivity
+[setup?] Creation of Expectations
+Interpretation
+Interpret: Update rating
+Result: Statement of Experience
+Feedback
+Alice shares new information with other Bob
+Bob gives feedback to Alice
+Alice – GOTO: Validity
+Activity / Experience (what happens)
+interpretation -> Rating (numeral) ranking
+(personal) “statement of experience (reputation)
+input  [feedback (institutional)] 
+outputs to assessment of attributes
+
+
+
+
+
+
+
+- Water the Plants that you want to grow.
+- feed the behaviors you want to grow
